@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>System City</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- PANTALLA DE INICIO -->
+
+  <div id="startScreen">
+
+    <h1>SYSTEM CITY</h1>
+
+    <p>
+      La ciudad dentro de la computadora ha sido infectada.
+    </p>
+
+    <p>
+      NEXUS debe salvar el sistema.
+    </p>
+
+    <button id="startButton">
+      INICIAR MISIÓN
+    </button>
+
+  </div>
+
+
+  <!-- JUEGO -->
+
+  <div id="game">
+
+    <!-- INFORMACIÓN -->
+
+    <div id="info">
+
+      <strong>NEXUS</strong>
+
+      <br>
+
+      ❤️ Vida:
+      <span id="health">100</span>
+
+      <br>
+
+      🛠️ Componentes reparados:
+      <span id="repaired">0</span>/4
+
+    </div>
+
+
+    <!-- MENSAJE -->
+
+    <div id="message">
+      Explora System City.
+    </div>
+
+
+    <!-- CIUDAD -->
+
+    <div id="city">
+
+
+      <!-- CPU -->
+
+      <div
+        class="building cpu"
+        data-name="CPU"
+      >
+
+        <h2>CPU</h2>
+
+        <p>PROCESADOR</p>
+
+        <div class="chip">
+          ■ ■ ■<br>
+          ■ ■ ■
+        </div>
+
+      </div>
+
+
+      <!-- RAM -->
+
+      <div
+        class="building ram"
+        data-name="RAM"
+      >
+
+        <h2>RAM</h2>
+
+        <p>MEMORIA</p>
+
+        <div class="chip">
+          ■ ■ ■<br>
+          ■ ■ ■
+        </div>
+
+      </div>
+
+
+      <!-- DISCO -->
+
+      <div
+        class="building storage"
+        data-name="DISCO"
+      >
+
+        <h2>DISCO</h2>
+
+        <p>ALMACENAMIENTO</p>
+
+        <div class="chip">
+          ■ ■ ■<br>
+          ■ ■ ■
+        </div>
+
+      </div>
+
+
+      <!-- GPU -->
+
+      <div
+        class="building gpu"
+        data-name="GPU"
+      >
+
+        <h2>GPU</h2>
+
+        <p>GRÁFICOS</p>
+
+        <div class="chip">
+          ■ ■ ■<br>
+          ■ ■ ■
+        </div>
+
+      </div>
+
+
+      <!-- NEXUS -->
+
+      <div id="player">
+        N
+      </div>
+
+    </div>
+
+
+    <!-- CONTROLES -->
+
+    <div id="controls">
+
+      <button id="upButton">▲</button>
+
+      <br>
+
+      <button id="leftButton">◀</button>
+
+      <button id="downButton">▼</button>
+
+      <button id="rightButton">▶</button>
+
+      <br>
+
+      <button id="attackButton">
+        ⚡ ATAQUE
+      </button>
+
+      <button id="repairButton">
+        🛠️ REPARAR
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
